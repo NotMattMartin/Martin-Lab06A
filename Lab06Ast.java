@@ -14,7 +14,8 @@ public class Lab06Ast
       Bank tom = new Bank();                              
       Bank suzy = new Bank(1600,32000);                    
       Bank bill = new Bank(8000,Expo.random(20000,90000)); 
-
+      double billsaving = bill.getSavings();
+      
       // Display Initial Balances
       System.out.println();
       System.out.println("Initial Balances");
@@ -31,6 +32,7 @@ public class Lab06Ast
       bill.checkingWithdrawal(8000);
       suzy.savingsWithdrawal(20000);
       suzy.checkingDeposit(20000);
+      bill.savingsWithdrawal(billsaving);
       
       // Display Final Balances
       System.out.println();
